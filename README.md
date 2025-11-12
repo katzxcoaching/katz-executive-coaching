@@ -29,7 +29,7 @@ Founder **Sam Katz** is a multilingual entrepreneur and former professional rugb
 
 ### 🌐 Website  
 Visit the live site:  
-👉 [https://katzting.github.io/katz-executive-coaching/](https://katzting.github.io/katz-executive-coaching/)  
+👉 [https://katzxcoaching.github.io/katz-executive-coaching/](https://katztxcoaching.github.io/katz-executive-coaching/)  
 *(If you haven’t enabled Pages yet, this link will activate once GitHub Pages is turned on.)*
 
 ---
