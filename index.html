@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Katz Executive Coaching – Executive English & Career Coaching</title>
+  <meta name="description" content="Katz Executive Coaching – Executive English & Career Coaching for Global Professionals. Bilingual landing page (EN/ES)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="#favicon"/>
+  <style>
+    :root {
+      --blue: #0B2C5F; /* Dark blue */
+      --blue-700: #103873;
+      --blue-900: #071A38;
+      --white: #ffffff;
+      --muted: #5f7496;
+      --bg: #f6f8fc;
+      --accent: #3FA9F5; /* subtle accent for hovers */
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(7,26,56,0.15);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif; color: var(--blue-900); background: var(--bg); }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { color: var(--accent); }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .nav { position: sticky; top: 0; z-index: 50; background: var(--white); border-bottom: 1px solid #e7eef7; }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 14px 0; }
+    .brand { display:flex; align-items:center; gap:14px; }
+    .logo-wrap { display:flex; align-items:center; gap:10px; }
+    .logo { width: 40px; height: 40px; }
+    .brand-text { display:flex; flex-direction:column; line-height:1.1; }
+    .brand-text strong { font-weight: 800; color: var(--blue); letter-spacing: 0.2px; }
+    .brand-text span { font-size: 12px; color: var(--muted); }
+    .nav-cta { display:flex; align-items:center; gap:10px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius: var(--radius); font-weight:600; transition: transform .06s ease, background .2s ease, color .2s ease; }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--blue); color: var(--white); box-shadow: var(--shadow); }
+    .btn-primary:hover { background: var(--blue-700); }
+    .btn-ghost { background: transparent; color: var(--blue); border: 1px solid #d5e0f0; }
+
+    /* Language toggle */
+    .lang-toggle { display:flex; gap:8px; background:#eef3fb; border-radius: 999px; padding: 4px; }
+    .lang-toggle button { border: none; background: transparent; padding: 8px 12px; border-radius: 999px; font-weight: 600; color: var(--blue); cursor: pointer; }
+    .lang-toggle button.active { background: var(--white); box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+
+    /* Hero */
+    .hero { background: radial-gradient(1200px 500px at 70% -100px, #cfe2ff 0%, rgba(255,255,255,0) 60%), var(--white); padding: 72px 0 48px; border-bottom: 1px solid #e7eef7; }
+    .hero-grid { display:grid; grid-template-columns: 1.2fr 1fr; gap:28px; align-items:center; }
+    .eyebrow { text-transform: uppercase; font-weight: 700; letter-spacing: 1px; color: var(--muted); font-size: 12px; }
+    h1 { font-size: clamp(28px, 5vw, 46px); margin: 10px 0 12px; color: var(--blue); line-height: 1.08; }
+    .lead { font-size: 18px; color: #3f5172; margin: 12px 0 22px; }
+    .hero-card { background: var(--bg); border: 1px solid #e7eef7; border-radius: var(--radius); padding: 18px; }
+
+    /* Sections */
+    section { padding: 64px 0; }
+    h2 { font-size: clamp(22px, 3.6vw, 32px); margin: 0 0 14px; color: var(--blue); }
+    .sub { color: var(--muted); margin-bottom: 22px; }
+
+    .features { display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: var(--white); border:1px solid #e7eef7; border-radius: var(--radius); padding: 18px; box-shadow: var(--shadow); }
+    .card h3 { margin: 6px 0 6px; font-size: 18px; color: var(--blue-700); }
+    .card p { margin: 0; color: #425a7e; }
+
+    .grid-2 { display:grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+    /* Testimonial */
+    blockquote { margin: 0; padding: 18px; background: var(--white); border-left: 4px solid var(--blue); border-radius: 10px; box-shadow: var(--shadow); }
+    blockquote p { margin: 0 0 8px; color: #1f2f4b; font-size: 16px; }
+    blockquote cite { font-style: normal; color: var(--muted); font-weight: 600; }
+
+    /* Footer */
+    footer { background: var(--white); border-top: 1px solid #e7eef7; padding: 32px 0; color: var(--muted); }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .hero-grid, .grid-2, .features { grid-template-columns: 1fr; }
+      .nav-inner { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Inline SVG favicon symbol -->
+  <svg id="favicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" style="display:none">
+    <circle cx="32" cy="32" r="30" fill="#0B2C5F"/>
+    <path d="M20 44V20h8c8 0 12 4 12 12s-4 12-12 12h-8zm8-6c5.333 0 8-2.667 8-8s-2.667-8-8-8h-2v16h2z" fill="#ffffff"/>
+  </svg>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="logo-wrap" aria-label="Katz Executive Coaching logo">
+          <!-- Simple monogram logo -->
+          <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-hidden="true">
+            <circle cx="32" cy="32" r="30" fill="#0B2C5F"/>
+            <path d="M20 44V20h8c8 0 12 4 12 12s-4 12-12 12h-8zm8-6c5.333 0 8-2.667 8-8s-2.667-8-8-8h-2v16h2z" fill="#ffffff"/>
+          </svg>
+          <div class="brand-text">
+            <strong>Katz Executive Coaching</strong>
+            <span>Executive English & Career Coaching</span>
+          </div>
+        </div>
+      </div>
+      <div class="nav-cta">
+        <div class="lang-toggle" role="group" aria-label="Language toggle">
+          <button id="btn-en" class="active">EN</button>
+          <button id="btn-es">ES</button>
+        </div>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow" data-en>For Global Professionals</div>
+          <div class="eyebrow" data-es style="display:none">Para Profesionales Globales</div>
+
+          <h1 data-en>Communicate, Lead, and Advance Your Career in English.</h1>
+          <h1 data-es style="display:none">Comunica, lidera y acelera tu carrera en inglés.</h1>
+
+          <p class="lead" data-en>
+            I help executives and ambitious professionals perform with confidence in international environments through a blend of Executive English, leadership communication, and career coaching.
+          </p>
+          <p class="lead" data-es style="display:none">
+            Ayudo a directivos y profesionales ambiciosos a rendir con confianza en entornos internacionales mediante una combinación de inglés ejecutivo, comunicación de liderazgo y coaching de carrera.
+          </p>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top: 8px;">
+            <a href="#contact" class="btn btn-primary" data-en>Contact Me</a>
+            <a href="#contact" class="btn btn-primary" data-es style="display:none">Contactar</a>
+            <a href="#programs" class="btn btn-ghost" data-en>View Programs</a>
+            <a href="#programs" class="btn btn-ghost" data-es style="display:none">Ver Programas</a>
+          </div>
+        </div>
+        <div>
+          <div class="hero-card">
+            <h3 style="margin:0 0 10px; color: var(--blue);" data-en>What clients achieve</h3>
+            <h3 style="margin:0 0 10px; color: var(--blue); display:none" data-es>Lo que logran los clientes</h3>
+            <ul style="margin:0; padding-left:18px; color:#435a7e; line-height:1.6" data-en>
+              <li>Clear, confident communication in high‑stakes meetings</li>
+              <li>Stronger presentation & negotiation skills in English</li>
+              <li>Career momentum: promotions, international roles, visibility</li>
+            </ul>
+            <ul style="margin:0; padding-left:18px; color:#435a7e; line-height:1.6; display:none" data-es>
+              <li>Comunicación clara y segura en reuniones de alto impacto</li>
+              <li>Mejores habilidades de presentación y negociación en inglés</li>
+              <li>Impulso profesional: ascensos, roles internacionales, visibilidad</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container grid-2">
+        <div class="card">
+          <h2 data-en>Meet Sam Katz</h2>
+          <h2 data-es style="display:none">Conoce a Sam Katz</h2>
+          <p data-en>
+            Founder of Katz Executive Coaching, multilingual entrepreneur, and former professional rugby player turned communication & career coach. I help professionals speak with authenticity, lead with impact, and grow their careers globally.
+          </p>
+          <p data-es style="display:none">
+            Fundador de Katz Executive Coaching, emprendedor multilingüe y exjugador profesional de rugby convertido en coach de comunicación y carrera. Ayudo a los profesionales a hablar con autenticidad, liderar con impacto y hacer crecer su carrera a nivel global.
+          </p>
+        </div>
+        <div class="card">
+          <h2 data-en>How the coaching works</h2>
+          <h2 data-es style="display:none">Cómo funciona el coaching</h2>
+          <p data-en>
+            We set clear goals, work on real materials (emails, presentations, negotiations), and track progress monthly. Programs combine Executive English, leadership communication, and career strategy for measurable results.
+          </p>
+          <p data-es style="display:none">
+            Definimos objetivos claros, trabajamos con materiales reales (emails, presentaciones, negociaciones) y medimos el progreso mensualmente. Los programas combinan inglés ejecutivo, comunicación de liderazgo y estrategia de carrera para resultados medibles.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROGRAMS / SERVICES -->
+    <section id="programs">
+      <div class="container">
+        <h2 data-en>Programs & Retainers</h2>
+        <h2 data-es style="display:none">Programas y Retainers</h2>
+        <p class="sub" data-en>Designed for companies and individual executives.</p>
+        <p class="sub" data-es style="display:none">Diseñados para empresas y directivos.</p>
+
+        <div class="features">
+          <div class="card">
+            <h3 data-en>Corporate Retainer</h3>
+            <h3 data-es style="display:none">Retainer para Empresas</h3>
+            <p data-en>
+              Ongoing support for leadership teams: Executive English, presentation & negotiation skills, career development. Monthly reporting for HR/L&D.
+            </p>
+            <p data-es style="display:none">
+              Soporte continuo para equipos directivos: inglés ejecutivo, habilidades de presentación y negociación, desarrollo de carrera. Informes mensuales para RR.HH./L&D.
+            </p>
+            <p style="margin-top:10px; font-weight:600" data-en>From €1,200 / month (3–5 execs)</p>
+            <p style="margin-top:10px; font-weight:600; display:none" data-es>Desde 1.200 € / mes (3–5 directivos)</p>
+          </div>
+          <div class="card">
+            <h3 data-en>Executive 1:1</h3>
+            <h3 data-es style="display:none">Ejecutivo 1:1</h3>
+            <p data-en>
+              Tailored coaching for ambitious professionals preparing for promotions, interviews, and international roles.
+            </p>
+            <p data-es style="display:none">
+              Coaching a medida para profesionales que se preparan para ascensos, entrevistas y roles internacionales.
+            </p>
+            <p style="margin-top:10px; font-weight:600" data-en>Packages from €500–700</p>
+            <p style="margin-top:10px; font-weight:600; display:none" data-es>Paquetes desde 500–700 €</p>
+          </div>
+          <div class="card">
+            <h3 data-en>Workshops & Keynotes</h3>
+            <h3 data-es style="display:none">Talleres & Charlas</h3>
+            <p data-en>
+              High‑impact sessions on leadership communication, international presentations, and confident English for teams.
+            </p>
+            <p data-es style="display:none">
+              Sesiones de alto impacto sobre comunicación de liderazgo, presentaciones internacionales e inglés con confianza para equipos.
+            </p>
+            <p style="margin-top:10px; font-weight:600" data-en>Custom pricing</p>
+            <p style="margin-top:10px; font-weight:600; display:none" data-es>Precio a medida</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <div class="container grid-2">
+        <blockquote>
+          <p data-en>“Sam helped me go from nervous in English meetings to leading presentations with confidence.”</p>
+          <p data-es style="display:none">“Sam me ayudó a pasar de los nervios en reuniones en inglés a liderar presentaciones con confianza.”</p>
+          <cite>— Marketing Director, Madrid</cite>
+        </blockquote>
+        <blockquote>
+          <p data-en>“More than language coaching — I started showing up as a leader.”</p>
+          <p data-es style="display:none">“Más que coaching de inglés: empecé a actuar como líder.”</p>
+          <cite>— Operations Manager, Barcelona</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container grid-2">
+        <div class="card">
+          <h2 data-en>Let’s connect</h2>
+          <h2 data-es style="display:none">Conectemos</h2>
+          <p data-en>Ready to explore how coaching can support you or your team?</p>
+          <p data-es style="display:none">¿Listo para explorar cómo el coaching puede ayudarle a usted o a su equipo?</p>
+          <p style="margin-top:10px">
+            <strong>Email:</strong> <a href="mailto:sam@katzexecutivecoaching.com">sam@katzexecutivecoaching.com</a><br/>
+            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-katz-global/" target="_blank" rel="noopener">linkedin.com/in/sam-katz-global</a><br/>
+            <strong>Location:</strong> Remote (based in Spain)
+          </p>
+          <a href="mailto:sam@katzexecutivecoaching.com" class="btn btn-primary" style="margin-top:10px" data-en>Contact Me</a>
+          <a href="mailto:sam@katzexecutivecoaching.com" class="btn btn-primary" style="margin-top:10px; display:none" data-es>Contactar</a>
+        </div>
+        <div class="card">
+          <h2 data-en>Brand assets</h2>
+          <h2 data-es style="display:none">Recursos de marca</h2>
+          <p data-en>Download the simple wordmark & monogram SVG from the logo below.</p>
+          <p data-es style="display:none">Descarga el logotipo (wordmark y monograma) en SVG desde el logotipo inferior.</p>
+          <div style="display:flex; gap:16px; align-items:center; margin-top:12px; flex-wrap:wrap">
+            <!-- Re-usable logo SVG (click to download) -->
+            <a id="dl-logo" download="katz-logo.svg" class="btn btn-ghost" href="#">Download Logo SVG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap">
+      <div style="display:flex; align-items:center; gap:10px">
+        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <circle cx="32" cy="32" r="30" fill="#0B2C5F"/>
+          <path d="M20 44V20h8c8 0 12 4 12 12s-4 12-12 12h-8zm8-6c5.333 0 8-2.667 8-8s-2.667-8-8-8h-2v16h2z" fill="#ffffff"/>
+        </svg>
+        <div>
+          <strong style="color:var(--blue)">Katz Executive Coaching</strong><br/>
+          <span>© 2025 – Empowering Global Professionals</span>
+        </div>
+      </div>
+      <div style="color:var(--muted)">
+        <a href="#about">About</a> · <a href="#programs" data-en>Programs</a><a href="#programs" data-es style="display:none">Programas</a> · <a href="#contact" data-en>Contact</a><a href="#contact" data-es style="display:none">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple bilingual toggle
+    const btnEN = document.getElementById('btn-en');
+    const btnES = document.getElementById('btn-es');
+    const enNodes = document.querySelectorAll('[data-en]');
+    const esNodes = document.querySelectorAll('[data-es]');
+
+    function setLang(lang) {
+      if (lang === 'en') {
+        enNodes.forEach(n => n.style.display = '');
+        esNodes.forEach(n => n.style.display = 'none');
+        btnEN.classList.add('active');
+        btnES.classList.remove('active');
+        document.documentElement.lang = 'en';
+      } else {
+        enNodes.forEach(n => n.style.display = 'none');
+        esNodes.forEach(n => n.style.display = '');
+        btnES.classList.add('active');
+        btnEN.classList.remove('active');
+        document.documentElement.lang = 'es';
+      }
+    }
+    btnEN.addEventListener('click', () => setLang('en'));
+    btnES.addEventListener('click', () => setLang('es'));
+
+    // Prepare downloadable SVG logo on the fly
+    const logoSVG = `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 80'>\n  <defs>\n    <style>\n      .title{ font: 800 32px Inter, Arial, sans-serif; fill: #0B2C5F; }\n      .subtitle{ font: 600 14px Inter, Arial, sans-serif; fill: #5f7496; }\n    </style>\n  </defs>\n  <circle cx='40' cy='40' r='36' fill='#0B2C5F' />\n  <path d='M28 56V24h12c12 0 18 6 18 16s-6 16-18 16H28zm12-8c8 0 12-4 12-8s-4-8-12-8h-3v16h3z' fill='#ffffff'/>\n  <text class='title' x='88' y='40' dominant-baseline='middle'>Katz Executive Coaching</text>\n  <text class='subtitle' x='88' y='60'>Executive English & Career Coaching</text>\n</svg>`;
+
+    const dl = document.getElementById('dl-logo');
+    function makeDataURL(svg) { return 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg); }
+    dl.setAttribute('href', makeDataURL(logoSVG));
+
+    // If URL has #es, default to Spanish
+    if (location.hash.toLowerCase() === '#es') setLang('es');
+  </script>
+</body>
+</html>
