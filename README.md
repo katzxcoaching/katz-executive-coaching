@@ -6,31 +6,34 @@
 
 ### 🌍 About  
 Katz Executive Coaching helps ambitious professionals and leadership teams **communicate, lead, and advance their careers in English**.  
-The program combines:
-- Executive English Coaching  
-- Leadership Communication Skills  
-- Career Development Strategy  
+
+Our approach blends:
+- **Executive English Coaching**  
+- **Leadership Communication Skills**  
+- **Career Development Strategy**  
 
 Founder **Sam Katz** is a multilingual entrepreneur and former professional rugby player who now works with executives and HR departments to improve communication, confidence, and performance in international business environments.
 
 ---
 
-### 💼 Programs
+### 💼 Programs  
+
 **For Companies**
 - Retainer-based coaching for executive teams  
 - Leadership communication workshops  
-- Monthly reporting for HR / L&D departments  
+- Monthly progress reports for HR / L&D departments  
 
 **For Individuals**
 - 1:1 coaching for interviews, promotions, and international roles  
-- Executive English & mindset for leadership growth  
+- Executive English and mindset training for leadership growth  
 
 ---
 
 ### 🌐 Website  
 Visit the live site:  
-👉 [https://katzxcoaching.github.io/katz-executive-coaching/](https://katztxcoaching.github.io/katz-executive-coaching/)  
-*(If you haven’t enabled Pages yet, this link will activate once GitHub Pages is turned on.)*
+👉 [https://katzxcoaching.github.io/katz-executive-coaching/](https://katzxcoaching.github.io/katz-executive-coaching/)  
+
+*(This link will work once GitHub Pages is enabled in your repository settings — Settings → Pages → Source → “Deploy from a branch” → main / (root) → Save.)*
 
 ---
 
