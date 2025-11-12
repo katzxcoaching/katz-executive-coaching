@@ -7,7 +7,7 @@
 ### 🌍 About  
 Katz Executive Coaching helps ambitious professionals and leadership teams **communicate, lead, and advance their careers in English**.  
 
-Our approach blends:
+My approach blends:
 - **Executive English Coaching**  
 - **Leadership Communication Skills**  
 - **Career Development Strategy**  
