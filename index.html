@@ -3,64 +3,98 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Katz Executive Coaching – Executive English & Career Coaching</title>
-  <meta name="description" content="Katz Executive Coaching – Executive English & Career Coaching for Global Professionals. Bilingual landing page (EN/ES)." />
+  <title>Katz Executive Coaching — Executive English & Career Coaching</title>
+  <meta name="description" content="Executive English & Career Coaching for global professionals. Clear communication. Confident leadership. Practical progress.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="#favicon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.png" type="image/png">
   <style>
-    :root {
-      --blue: #0B2C5F;
-      --blue-700: #103873;
-      --blue-900: #071A38;
-      --white: #ffffff;
-      --muted: #5f7496;
-      --bg: #f6f8fc;
-      --accent: #3FA9F5;
-      --radius: 18px;
-      --shadow: 0 10px 30px rgba(7,26,56,0.15);
+    :root{
+      --blue:#0B2C5F; --blue-700:#103873; --bg:#f6f8fc; --text:#071A38; --muted:#5f7496; --white:#fff;
+      --radius:18px;
     }
-    * { box-sizing: border-box; }
-    html, body { margin:0; padding:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif; color: var(--blue-900); background: var(--bg); }
-    a { color: var(--blue); text-decoration: none; }
-    a:hover { color: var(--accent); }
-    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-    .nav { position: sticky; top: 0; z-index: 50; background: var(--white); border-bottom: 1px solid #e7eef7; }
-    .nav-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; padding: 14px 0; }
-    .brand { display:flex; align-items:center; gap:14px; }
-    .logo { width: 40px; height: 40px; }
-    .brand-text { display:flex; flex-direction:column; line-height:1.1; }
-    .brand-text strong { font-weight: 800; color: var(--blue); letter-spacing: 0.2px; }
-    .brand-text span { font-size: 12px; color: var(--muted); }
-    .btn { display:inline-flex; align-items:center; justify-content:center; padding:12px 18px; border-radius: var(--radius); font-weight:600; }
-    .btn-primary { background: var(--blue); color: var(--white); }
+    *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg)}
+    .wrap{max-width:980px;margin:0 auto;padding:32px 20px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:40px;height:40px;border-radius:50%}
+    .brand strong{font-weight:800;color:var(--blue);letter-spacing:.2px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 18px;border-radius:var(--radius);font-weight:600;text-decoration:none}
+    .btn-primary{background:var(--blue);color:var(--white)}
+    .hero{padding:80px 0 40px}
+    .hero h1{font-size:42px;line-height:1.15;margin:0 0 16px;color:var(--text)}
+    .hero p{font-size:18px;color:var(--muted);max-width:720px}
+    .hero .cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+    .strip{margin:56px 0 24px;border-top:1px solid #e7eef7;padding-top:24px;color:var(--muted);font-size:15px}
+    .list{display:flex;gap:18px;flex-wrap:wrap}
+    .pill{background:#e9f0fb;color:var(--blue-700);padding:10px 14px;border-radius:999px;font-weight:600;font-size:14px}
+    .foot{margin:64px 0 20px;color:var(--muted);font-size:14px}
+    #contact{padding-top:64px;margin-top:64px}
+    @media (max-width:640px){.hero h1{font-size:32px}}
   </style>
+
+  <meta property="og:title" content="Katz Executive Coaching">
+  <meta property="og:description" content="Executive English & Career Coaching for global professionals.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://katzxcoaching.github.io/katz-executive-coaching/">
+  <meta property="og:image" content="og-image.png">
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ProfessionalService",
+    "name":"Katz Executive Coaching",
+    "url":"https://katzxcoaching.github.io/katz-executive-coaching/",
+    "description":"Executive English & Career Coaching for global professionals.",
+    "founder":"Sam Katz",
+    "areaServed":"Global",
+    "email":"mailto:sam.katz@live.com"
+  }
+  </script>
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <div class="brand">
-        <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-hidden="true">
-          <circle cx="32" cy="32" r="30" fill="#0B2C5F"/>
-          <path d="M20 44V20h8c8 0 12 4 12 12s-4 12-12 12h-8zm8-6c5.333 0 8-2.667 8-8s-2.667-8-8-8h-2v16h2z" fill="#ffffff"/>
-        </svg>
-        <div class="brand-text">
-          <strong>Katz Executive Coaching</strong>
-          <span>Executive English & Career Coaching</span>
-        </div>
+  <header class="wrap nav">
+    <div class="brand">
+      <img src="logo.png" alt="Katz Executive Coaching logo" />
+      <div>
+        <strong>Katz Executive Coaching</strong><br>
+        <span style="font-size:12px;color:var(--muted)">Executive English & Career Coaching</span>
       </div>
-      <a href="#contact" class="btn btn-primary">Contact</a>
     </div>
+    <a class="btn btn-primary" href="#contact">Contact</a>
   </header>
 
-  <main class="container">
-    <h1>Communicate, Lead, and Advance Your Career in English.</h1>
-    <p>I help executives and ambitious professionals perform with confidence in international environments through a blend of Executive English, leadership communication, and career coaching.</p>
-  </main>
+  <main class="wrap">
+    <section class="hero">
+      <h1>Communicate clearly. Lead confidently. Advance your career.</h1>
+      <p>I help executives and ambitious professionals perform in international environments through a focused blend of Executive English, leadership communication, and practical career coaching.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="mailto:sam.katz@live.com?subject=Coaching%20Inquiry%20—%20KEC">Email Sam</a>
+        <a class="btn" style="background:#e7eef7;color:var(--blue-700)" href="https://www.linkedin.com/in/sam-katz-global" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </section>
 
-  <footer class="container">
-    <p>© 2025 Katz Executive Coaching – Empowering Global Professionals</p>
-  </footer>
+    <section class="strip">
+      <div class="list">
+        <span class="pill">Executive English</span>
+        <span class="pill">Leadership Communication</span>
+        <span class="pill">Interview & Promotion Prep</span>
+        <span class="pill">Workshops for Teams</span>
+        <span class="pill">Reporting for HR / L&amp;D</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 style="font-size:22px;margin:0 0 10px">Contact</h2>
+      <p class="muted" style="margin:0 0 16px;color:var(--muted)">Remote coaching. Based in Spain. Sessions in English or Spanish.</p>
+      <p style="margin:0 0 8px"><strong>Email:</strong> <a href="mailto:sam.katz@live.com">sam.katz@live.com</a></p>
+      <p style="margin:0"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sam-katz-global" target="_blank" rel="noopener">linkedin.com/in/sam-katz-global</a></p>
+    </section>
+
+    <footer class="foot">
+      © 2025 Katz Executive Coaching — Empowering Global Professionals
+    </footer>
+  </main>
 </body>
 </html>
